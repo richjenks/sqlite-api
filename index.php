@@ -49,6 +49,7 @@ try {
 		case 'INSERT':
 			$rows = $db->exec($sql);
 			respond(['rows' => $rows], 201);
+			break;
 
 		default:
 			$rows = $db->exec($sql);
